@@ -6,33 +6,49 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
 
             defaults: {
                 xtype: 'paintingcard',
+                styleHtmlContent: true
             },
 
             items: [
 
                 {
                     slug: 'asteroid',
-                    title: 'Asteroid'
+                    title: 'Asteroid',
+                    artist: 'Dale Adcock',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
                 },
 
                 {
                     slug: 'template',
-                    title: 'Template'
+                    title: 'Template',
+                    artist: 'Dale Adcock',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
                 },
 
                 {
                     slug: 'standing',
-                    title: 'Standing'
+                    title: 'Standing',
+                    artist: 'Dale Adcock',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
                 },
 
                 {
                     slug: 'sitting',
-                    title: 'Sitting'
+                    title: 'Sitting',
+                    artist: 'Dale Adcock',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
                 },
 
                 {
                     slug: 'erect',
-                    title: 'Erect'
+                    title: 'Erect',
+                    artist: 'Dale Adcock',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
                 },
 
             ],
