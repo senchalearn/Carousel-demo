@@ -6,7 +6,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
 
             defaults: {
                 xtype: 'paintingcard',
-                styleHtmlContent: true,
                 artist: 'Dale Adcock',
                 url: 'http://daleadcock.com/index.php?/p/p/',
                 medium: 'oil on linen'
