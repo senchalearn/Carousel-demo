@@ -6,7 +6,10 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
 
             defaults: {
                 xtype: 'paintingcard',
-                styleHtmlContent: true
+                styleHtmlContent: true,
+                artist: 'Dale Adcock',
+                url: 'http://daleadcock.com/index.php?/p/p/',
+                medium: 'oil on linen'
             },
 
             items: [
@@ -14,41 +17,36 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 {
                     slug: 'asteroid',
                     title: 'Asteroid',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    dimensions: '152.4 x 152.4cm',
+                    date: '2010-2011'
                 },
 
                 {
                     slug: 'template',
                     title: 'Template',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    dimensions: '245 x 195cm',
+                    date: '2010-2011'
                 },
 
                 {
                     slug: 'standing',
                     title: 'Standing',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    dimensions: '190 x 230cm',
+                    date: '2009'
                 },
 
                 {
                     slug: 'sitting',
                     title: 'Sitting',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    dimensions: '230 x 190cm',
+                    date: '2009'
                 },
 
                 {
                     slug: 'erect',
                     title: 'Erect',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    dimensions: '230 x 190cm',
+                    date: '2009'
                 },
 
             ],
