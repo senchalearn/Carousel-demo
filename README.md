@@ -3,13 +3,13 @@ This Git repository includes all of the source code used in creating a tutorial 
 The tutorial includes several checkpoints:
 
 * [Blank slate][0]
-* [A basic carousel][1]
-* [Carousel plus vbox layout][2] (with much duplication)
-* [Carousel plus vbox layout][3] (DRY, with a custom componenent)
-* [Carousel with a nested carousel][4]
-* [Carousel with a flipcard][5]
+* [A basic carousel][1] ([view diff][00-01])
+* [Carousel plus vbox layout (with much duplication)][2] ([view diff][01-02])
+* [Carousel plus vbox layout (DRY, with a custom componenent)][3] ([view diff][02-03])
+* [Carousel with a nested carousel][4] ([view diff][03-04])
+* [Carousel with a flipcard][5] ([view diff][04-05])
 
-# Using this repository to follow the screencast
+## Using this repository to follow the screencast
 
 First, you'll have to clone this repository:
 
@@ -42,3 +42,9 @@ You can try out the demo here:
 [3]: https://github.com/senchalearn/Carousel-demo/tree/03_carousel_plus_vbox_dry
 [4]: https://github.com/senchalearn/Carousel-demo/tree/04_carousel_plus_carousel
 [5]: https://github.com/senchalearn/Carousel-demo/tree/05_carousel_plus_toolbar
+
+[00-01]: https://github.com/senchalearn/Carousel-demo/compare/00_blank_slate...01_basic_carousel
+[01-02]: https://github.com/senchalearn/Carousel-demo/compare/01_basic_carousel...02_carousel_plus_vbox_verbose
+[02-03]: https://github.com/senchalearn/Carousel-demo/compare/02_carousel_plus_vbox_verbose...03_carousel_plus_vbox_dry
+[03-04]: https://github.com/senchalearn/Carousel-demo/compare/03_carousel_plus_vbox_dry...04_carousel_plus_carousel
+[04-05]: https://github.com/senchalearn/Carousel-demo/compare/04_carousel_plus_carousel...05_carousel_plus_toolbar
