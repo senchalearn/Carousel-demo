@@ -1,4 +1,4 @@
-This Git repository includes all of the source code used in creating a tutorial about carousels in Sencha Touch.
+This Git repository includes all of the source code used in creating a tutorial about [carousels in Sencha Touch][tutorial].
 
 The tutorial includes several checkpoints:
 
@@ -33,9 +33,11 @@ By default, the git clone command will only create the master branch locally. If
 
 You can try out the demo here:
 
-* [http://senchalearn.github.com/Carousel-demo/][t]
+* [http://senchalearn.github.com/Carousel-demo/][demo]
 
-[t]: http://senchalearn.github.com/Carousel-demo/
+[demo]: http://senchalearn.github.com/Carousel-demo/
+[tutorial]: http://www.sencha.com/learn/an-introduction-to-carousels
+
 [0]: https://github.com/senchalearn/Carousel-demo/tree/00_blank_slate
 [1]: https://github.com/senchalearn/Carousel-demo/tree/01_basic_carousel
 [2]: https://github.com/senchalearn/Carousel-demo/tree/02_carousel_plus_vbox_verbose
