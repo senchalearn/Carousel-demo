@@ -35,6 +35,8 @@ You can try out the demo here:
 
 * [http://senchalearn.github.com/Carousel-demo/][demo]
 
+![link QR code](http://qrcode.kaywa.com/img.php?s=5&d=http%3A%2F%2Fsenchalearn.github.com%2FCarousel-demo%2F)
+
 [demo]: http://senchalearn.github.com/Carousel-demo/
 [tutorial]: http://www.sencha.com/learn/an-introduction-to-carousels
 
