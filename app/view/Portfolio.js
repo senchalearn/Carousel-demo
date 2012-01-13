@@ -12,9 +12,9 @@ Ext.define('App.view.Portfolio', {
         },
         
         items: [
-            { id: 'one' },
-            { id: 'two' },
-            { id: 'three' },
+            { id: 'thing-one', thing: 'one' },
+            { id: 'thing-two', thing: 'two' },
+            { id: 'thing-three', thing: 'three' },
         ]
     }
 });

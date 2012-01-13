@@ -3,6 +3,13 @@ Ext.define('App.view.PictureCard', {
     xtype: 'picturecard',
     
     config: {
-        html: 'it works!'
+        // html: 'it works!',
+        tpl: 'I am number {thing}',
+        styleHtmlContent: true,
+        layout: {
+            type: 'card',
+            animation: 'slide'
+        },
+        thing: true // just creating a property inside config:{} creates {get,set}Thing()
     }
 });
