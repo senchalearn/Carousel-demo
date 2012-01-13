@@ -1,7 +1,14 @@
-App = new Ext.Application({
-    name: "App",
+Ext.Loader.setConfig({enabled: true});
 
+Ext.application({
+    name: 'App',
+    
+    controllers: ['Main'],
+    views: ['Portfolio'],
+    
     launch: function() {
-        this.views.viewport = new this.views.Viewport();
+        Ext.Viewport.add({
+            xclass: 'App.view.Portfolio'
+        });
     }
 });
