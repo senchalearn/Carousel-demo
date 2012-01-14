@@ -1,7 +1,11 @@
 Ext.define('App.view.Portfolio', {
     extend: 'Ext.Carousel',
+    xtype: 'portfolio',
 
-    requires: ['App.view.PictureCard'],
+    requires: [
+        'App.view.PictureCard',
+        'App.view.GlobalToolbar',
+    ],
 
     config: {
         defaults: {
@@ -12,10 +16,7 @@ Ext.define('App.view.Portfolio', {
         },
         
         items: [{
-            docked: 'top',
-            id: 'globaltoolbar',
-            xtype: 'toolbar',
-            title: '[default]'
+            xtype: 'globaltoolbar'
         }, {
             slug: 'asteroid',
             title: 'Asteroid',

@@ -3,18 +3,28 @@ Ext.define('App.controller.Main', {
 
     views:  ['Portfolio', 'PictureCard'],
 
-    refs: [],
+    refs: [
+        {
+            ref: 'toolbar',
+            selector: 'globaltoolbar'
+        },
+        {
+            ref: 'carousel',
+            selector: 'portfolio'
+        },
+    ],
 
     init: function() {
         this.control({
-            'picturecard portfolio': {
-                show: 'doSomething'
+            'portfolio': {
+                activeitemchange: 'redrawToolbar'
             }
         });
     },
-    
-    doSomething: function() {
-        console.log('adsf')
+
+    redrawToolbar: function() {
+        var picture = this.getCarousel().getActiveItem();
+        this.getToolbar().setTitle(picture.getTitle());
     }
 
 });
