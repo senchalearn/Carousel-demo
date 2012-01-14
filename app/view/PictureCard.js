@@ -1,16 +1,16 @@
 Ext.define('App.view.PictureCard', {
     extend: 'Ext.Panel',
     xtype: 'picturecard',
+    requires: [
+        'App.view.PictureImageCard',
+        'App.view.PictureInfoCard'
+    ],
     
     config: {
-        // html: 'it works!',
-        tpl: '{title}, by {artist}',
-        styleHtmlContent: true,
         layout: {
             type: 'card',
             animation: 'slide'
         },
-        cls: 'painting',
 
         // Custom properties:
         artist: 'Dale Adcock',
@@ -26,8 +26,13 @@ Ext.define('App.view.PictureCard', {
     constructor: function() {
         this.callParent(arguments);
 
-        this.setItemId('image_' + this.getSlug());
-        this.setCls('painting ' + this.getSlug());
+        this.setItems(
+            {
+                xtype: 'pictureimagecard',
+                slug: this.getSlug()
+            },
+            { xtype: 'pictureinfocard' }
+        );
     }
 
 });
