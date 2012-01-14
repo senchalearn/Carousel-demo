@@ -28,6 +28,10 @@ Ext.define('App.view.PictureCard', {
 
         this.setItems(
             {
+                xtype: 'pictureimagecard',
+                slug: this.getSlug()
+            },
+            {
                 xtype:       'pictureinfocard',
                 artist:      this.getArtist(),
                 url:         this.getUrl(),
@@ -37,10 +41,6 @@ Ext.define('App.view.PictureCard', {
                 title:       this.getTitle(),
                 dimensions:  this.getDimensions(),
                 date:        this.getDate()
-            },
-            {
-                xtype: 'pictureimagecard',
-                slug: this.getSlug()
             }
         );
     }

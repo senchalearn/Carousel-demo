@@ -12,6 +12,11 @@ Ext.define('App.view.Portfolio', {
         },
         
         items: [{
+            docked: 'top',
+            id: 'globaltoolbar',
+            xtype: 'toolbar',
+            title: '[default]'
+        }, {
             slug: 'asteroid',
             title: 'Asteroid',
             dimensions: '152.4 x 152.4cm',
