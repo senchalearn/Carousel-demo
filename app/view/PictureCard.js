@@ -10,6 +10,19 @@ Ext.define('App.view.PictureCard', {
             type: 'card',
             animation: 'slide'
         },
-        thing: true // just creating a property inside config:{} creates {get,set}Thing()
-    }
+        thing: 'default'
+    },
+
+    constructor: function() {
+        this.callParent(arguments);
+
+        this.setData({
+            thing: this.getThing()
+        });
+    },
+
+    applyThing: function(newValue, oldValue) {
+        console.log('setting thing for #' + this.getId() + ' to ' + newValue);
+        return newValue;
+    },
 });
