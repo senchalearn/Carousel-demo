@@ -4,12 +4,18 @@ Ext.define('App.view.PictureCard', {
     
     config: {
         // html: 'it works!',
-        tpl: '{title}',
+        tpl: '{title}, by {artist}',
         styleHtmlContent: true,
         layout: {
             type: 'card',
             animation: 'slide'
         },
+        cls: 'painting',
+
+        // Custom properties:
+        artist: 'Dale Adcock',
+        url: 'http://daleadcock.com/index.php?/p/p/',
+        medium: 'oil on linen',
         title: 'default',
         slug: 'asteroid',
         title: 'Asteroid',
@@ -20,13 +26,8 @@ Ext.define('App.view.PictureCard', {
     constructor: function() {
         this.callParent(arguments);
 
-        this.setData({
-            title: this.getTitle()
-        });
-    },
+        this.setItemId('image_' + this.getSlug());
+        this.setCls('painting ' + this.getSlug());
+    }
 
-    applyTitle: function(newValue, oldValue) {
-        console.log('setting title for #' + this.getId() + ' to ' + newValue);
-        return newValue;
-    },
 });
