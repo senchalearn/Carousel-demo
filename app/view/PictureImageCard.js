@@ -4,6 +4,8 @@ Ext.define('App.view.PictureImageCard', {
 
     config: {
         cls: 'painting',
+
+        // Custom properties:
         slug: 'asteroid'
     },
 
