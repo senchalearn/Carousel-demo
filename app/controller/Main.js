@@ -47,6 +47,14 @@ Ext.define('App.controller.Main', {
 
     togglePictureCard: function() {
         console.log('toggling...');
+        var target = this.getToggleButton().getText(),
+            picture = this.getCarousel().getActiveItem();
+
+        if (target === 'info') {
+            picture.setActiveItem(1);
+        } else {
+            picture.setActiveItem(0);
+        }
     }
 
 
