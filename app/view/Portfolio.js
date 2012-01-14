@@ -11,10 +11,31 @@ Ext.define('App.view.Portfolio', {
             medium: 'oil on linen'
         },
         
-        items: [
-            { id: 'thing-one', thing: 'one' },
-            { id: 'thing-two', thing: 'two' },
-            { id: 'thing-three', thing: 'three' },
-        ]
+        items: [{
+            slug: 'asteroid',
+            title: 'Asteroid',
+            dimensions: '152.4 x 152.4cm',
+            date: '2010-2011'
+        }, {
+            slug: 'template',
+            title: 'Template',
+            dimensions: '245 x 195cm',
+            date: '2010-2011'
+        }, {
+            slug: 'standing',
+            title: 'Standing',
+            dimensions: '190 x 230cm',
+            date: '2009'
+        }, {
+            slug: 'sitting',
+            title: 'Sitting',
+            dimensions: '230 x 190cm',
+            date: '2009'
+        }, {
+            slug: 'erect',
+            title: 'Erect',
+            dimensions: '230 x 190cm',
+            date: '2009'
+        }]
     }
 });

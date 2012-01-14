@@ -4,25 +4,29 @@ Ext.define('App.view.PictureCard', {
     
     config: {
         // html: 'it works!',
-        tpl: 'I am number {thing}',
+        tpl: '{title}',
         styleHtmlContent: true,
         layout: {
             type: 'card',
             animation: 'slide'
         },
-        thing: 'default'
+        title: 'default',
+        slug: 'asteroid',
+        title: 'Asteroid',
+        dimensions: '152.4 x 152.4cm',
+        date: '2010-2011'
     },
 
     constructor: function() {
         this.callParent(arguments);
 
         this.setData({
-            thing: this.getThing()
+            title: this.getTitle()
         });
     },
 
-    applyThing: function(newValue, oldValue) {
-        console.log('setting thing for #' + this.getId() + ' to ' + newValue);
+    applyTitle: function(newValue, oldValue) {
+        console.log('setting title for #' + this.getId() + ' to ' + newValue);
         return newValue;
     },
 });
