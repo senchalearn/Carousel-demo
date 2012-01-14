@@ -4,6 +4,13 @@ Ext.define('App.view.GlobalToolbar', {
 
     config: {
         docked: 'top',
-        title: '[default]'
+        title: '[default]',
+        items: [
+            {
+                xtype: 'button',
+                text: '[swap]',
+                action: 'toggle'
+            }
+        ]
     }
 });
