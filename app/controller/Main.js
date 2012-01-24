@@ -11,7 +11,8 @@ Ext.define('App.controller.Main', {
         },
         control: {
             'portfolio': {
-                activeitemchange: 'drawToolbar'
+                activeitemchange: 'drawToolbar',
+                show: 'drawToolbar'
             },
             'picturecard': {
                 activeitemchange: 'drawToolbar'
