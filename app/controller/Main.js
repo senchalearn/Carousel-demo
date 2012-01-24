@@ -36,16 +36,16 @@ Ext.define('App.controller.Main', {
     },
 
     togglePictureCard: function() {
-        console.log('toggling...');
         var target = this.getToggleButton().getText(),
             picture = this.getCarousel().getActiveItem();
 
         if (target === 'info') {
-            picture.setActiveItem(1);
+            console.log('Showing picture information...');
+            picture.setActiveItem(1); // WTF does this not work!?
         } else {
-            picture.setActiveItem(0);
+            console.log('Showing picture image...');
+            picture.setActiveItem(0); // WTF does this not work!?
         }
     }
-
 
 });
