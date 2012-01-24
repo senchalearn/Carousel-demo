@@ -3,23 +3,13 @@ Ext.define('App.controller.Main', {
 
     views:  ['Portfolio', 'PictureCard'],
 
-    refs: [
-        {
-            ref: 'toolbar',
-            selector: 'globaltoolbar'
+    config: {
+        refs: {
+            toolbar: 'globaltoolbar',
+            carousel: 'portfolio',
+            toggleButton: 'button[action=toggle]',
         },
-        {
-            ref: 'carousel',
-            selector: 'portfolio'
-        },
-        {
-            ref: 'toggleButton',
-            selector: 'button[action=toggle]'
-        }
-    ],
-
-    init: function() {
-        this.control({
+        control: {
             'portfolio': {
                 activeitemchange: 'drawToolbar'
             },
@@ -29,7 +19,7 @@ Ext.define('App.controller.Main', {
             'button[action=toggle]': {
                 tap: 'togglePictureCard'
             }
-        });
+        }
     },
 
     drawToolbar: function() {
